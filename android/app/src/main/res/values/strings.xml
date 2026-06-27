@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">The Gaming Aura</string>
+    <string name="title_activity_main">The Gaming Aura</string>
+    <string name="package_name">com.thegamingaura.app</string>
+    <string name="custom_url_scheme">com.thegamingaura.app</string>
+</resources>

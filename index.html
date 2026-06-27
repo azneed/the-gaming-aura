@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>The Gaming Aura | Premium Console & Billiards Station</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to The Gaming Aura, an elite gaming station offering PS5 console arenas, premium gaming titles like FIFA, GTA V, and Game of Thrones, alongside luxury snooker and 8-ball pool tables." />
+    <meta name="keywords" content="gaming station, PS5 gaming, snooker, pool table, FIFA gaming, GTA 5, game of thrones game, gaming lounge, the gaming aura" />
+    <meta name="author" content="The Gaming Aura" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="custom-cursor-follower" class="custom-cursor-follower"></div>
+
+    <!-- Noise Overlay for Cinematic Texture -->
+    <div class="noise-overlay"></div>
+
+    <!-- Main Scroll Container for Lenis -->
+    <div class="smooth-wrapper" id="smooth-wrapper">
+      
+      <!-- Navbar -->
+      <header id="main-header" class="main-header">
+        <div class="logo">
+          <a href="#" id="brand-logo" class="hover-target">THE GAMING <span>AURA</span></a>
+        </div>
+        <nav class="navbar">
+          <a href="#hero" class="nav-link hover-target">Home</a>
+          <a href="#aura-select" class="nav-link hover-target">Aura Zones</a>
+          <a href="#digital" class="nav-link hover-target">Console Arena</a>
+          <a href="#tactile" class="nav-link hover-target">Billiards Lounge</a>
+          <a href="#booking" class="btn-book hover-target">Book Arena</a>
+        </nav>
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="menu-toggle hover-target" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="mobile-menu">
+        <nav class="mobile-nav">
+          <a href="#hero" class="mobile-nav-link">Home</a>
+          <a href="#aura-select" class="mobile-nav-link">Aura Zones</a>
+          <a href="#digital" class="mobile-nav-link">Console Arena</a>
+          <a href="#tactile" class="mobile-nav-link">Billiards Lounge</a>
+          <a href="#booking" class="mobile-nav-btn">Book Arena</a>
+        </nav>
+      </div>
+
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-bg-container">
+          <img src="/hero_bg.png" alt="Futuristic Gaming Lounge" class="hero-bg" />
+          <div class="hero-glow-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-uppala-badge">The Best Gaming Centre In Uppala</div>
+          <div class="hero-title-container">
+            <h1 class="hero-title">
+              <span class="word"><span class="char">T</span><span class="char">H</span><span class="char">E</span></span>
+              <span class="word gradient-word"><span class="char">G</span><span class="char">A</span><span class="char">M</span><span class="char">I</span><span class="char">N</span><span class="char">G</span></span>
+              <span class="word"><span class="char">A</span><span class="char">U</span><span class="char">R</span><span class="char">A</span></span>
+            </h1>
+          </div>
+          <p class="hero-subtitle">Step into the ultimate realm. High-intensity digital console action meets the timeless precision of physical billiards.</p>
+          <div class="hero-cta-group">
+            <a href="#aura-select" class="btn-primary hover-target">Explore Zones</a>
+            <a href="#booking" class="btn-secondary hover-target">Reserve Slots</a>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <span class="mouse-icon">
+            <span class="wheel"></span>
+          </span>
+          <span class="scroll-text">Scroll Down</span>
+        </div>
+      </section>
+
+      <!-- "Choose Your Aura" Split Section -->
+      <section id="aura-select" class="aura-select-section">
+        <div class="split-side console-side hover-target" data-aura="console">
+          <div class="side-background" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('/ps5_showcase.png')"></div>
+          <div class="side-content">
+            <div class="side-tag">Digital Arena</div>
+            <h2 class="side-title">CONSOLE<br>POWERHOUSE</h2>
+            <p class="side-desc">Experience 4K 120FPS gaming on PS5. Top titles, immersive controllers, ultra-fast screens.</p>
+            <a href="#digital" class="side-btn">Enter Arena</a>
+          </div>
+          <div class="side-color-glow"></div>
+        </div>
+        
+        <div class="split-side billiards-side hover-target" data-aura="billiards">
+          <div class="side-background" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('/snooker_lounge.png')"></div>
+          <div class="side-content">
+            <div class="side-tag">Tactile Lounge</div>
+            <h2 class="side-title">PHYSICAL<br>PRECISION</h2>
+            <p class="side-desc">Premium 12ft Snooker tables & tournament-grade 8-ball Pool. Pure felt, absolute focus.</p>
+            <a href="#tactile" class="side-btn">Visit Lounge</a>
+          </div>
+          <div class="side-color-glow"></div>
+        </div>
+      </section>
+
+      <!-- Digital Arena Showcase (Horizontal Scroll) -->
+      <div id="digital" class="digital-scroll-container">
+        <div class="horizontal-wrapper">
+          <div class="horizontal-title-section">
+            <h2 class="horizontal-main-title">DIGITAL<br><span>ARENA</span></h2>
+            <p class="horizontal-subtitle">Unmatched speed, incredible graphics, and top tier controllers. Your dashboard of digital dominance.</p>
+          </div>
+          <div class="horizontal-track">
+            
+            <!-- Card 1: PS5 Gears -->
+            <div class="horizontal-card console-card">
+              <div class="card-image-wrapper">
+                <img src="/ps5_showcase.png" alt="PS5 Console Setup" class="card-img" />
+                <div class="card-glow neon-pink"></div>
+              </div>
+              <div class="card-details">
+                <div class="card-num">01</div>
+                <h3 class="card-title">Next-Gen Gear</h3>
+                <h4 class="card-subtitle">PlayStation 5 Console Setup</h4>
+                <p class="card-desc">DualSense haptic feedback, 3D spatial audio, ray-traced visuals, and competitive responsiveness. Designed for pros.</p>
+                <ul class="card-specs">
+                  <li>4K Ultra-HD Displays</li>
+                  <li>Low-Latency Gaming Monitors</li>
+                  <li>Premium Noise-Canceling Headsets</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 2: FIFA -->
+            <div class="horizontal-card game-card">
+              <div class="card-image-wrapper">
+                <img src="/game_fifa.png" alt="FIFA Tournament Play" class="card-img" />
+                <div class="card-glow neon-green"></div>
+              </div>
+              <div class="card-details">
+                <div class="card-num">02</div>
+                <h3 class="card-title">FIFA 26</h3>
+                <h4 class="card-subtitle">Competitive Soccer Tournaments</h4>
+                <p class="card-desc">Experience fluid dribbling, hypermotion animation physics, and intense couch co-op matchups with friends or in local tournaments.</p>
+                <div class="game-badge">Tournament Ready</div>
+              </div>
+            </div>
+
+            <!-- Card 3: GTA 5 -->
+            <div class="horizontal-card game-card">
+              <div class="card-image-wrapper">
+                <img src="/game_gta5.png" alt="GTA 5 Online Arena" class="card-img" />
+                <div class="card-glow neon-purple"></div>
+              </div>
+              <div class="card-details">
+                <div class="card-num">03</div>
+                <h3 class="card-title">GTA V / Online</h3>
+                <h4 class="card-subtitle">Open-World Chaos</h4>
+                <p class="card-desc">Heists, drag races, and sandboxes. Join custom crew sessions on high-speed servers with ultra-smooth frame rates.</p>
+                <div class="game-badge">Multiplayer Co-Op</div>
+              </div>
+            </div>
+
+            <!-- Card 4: Game of Thrones -->
+            <div class="horizontal-card game-card">
+              <div class="card-image-wrapper">
+                <img src="/game_got.png" alt="Game of Thrones Gaming" class="card-img" />
+                <div class="card-glow neon-orange"></div>
+              </div>
+              <div class="card-details">
+                <div class="card-num">04</div>
+                <h3 class="card-title">Game of Thrones</h3>
+                <h4 class="card-subtitle">Epic Action RPGs</h4>
+                <p class="card-desc">Embark on legendary narrative campaigns, fighting for the Iron Throne. Complete atmospheric depth with heavy cinematic screen options.</p>
+                <div class="game-badge">Cinematic Solo RPG</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Tactile Lounge (Snooker & Pool) -->
+      <section id="tactile" class="tactile-section">
+        <!-- Interactive Canvas Background -->
+        <div class="canvas-container">
+          <canvas id="physics-canvas" class="physics-canvas"></canvas>
+          <div class="canvas-instruction">Move cursor to scatter the balls • Click & Drag to strike</div>
+        </div>
+        
+        <div class="tactile-content">
+          <div class="section-badge">Billiards Lounge</div>
+          <h2 class="tactile-title animate-text-reveal">THE TACTILE<br><span>PRECISION</span></h2>
+          <p class="tactile-desc animate-text-reveal">Indulge in physical games requiring skill, focus, and strategic calculation. Unwind in a premium lounge designed for enthusiasts.</p>
+          
+          <div class="tactile-features">
+            <div class="feature-item hover-target">
+              <div class="feature-icon">🎱</div>
+              <h3 class="feature-title">Premium 12ft Snooker</h3>
+              <p class="feature-desc">Perfect steel-block cushions, finest West of England wool felt, and Aramith tournament balls.</p>
+            </div>
+            
+            <div class="feature-item hover-target">
+              <div class="feature-icon">🟢</div>
+              <h3 class="feature-title">8-Ball Pool Arena</h3>
+              <p class="feature-desc">Standard and English pool tables with flawless levelling and ambient overhead shadowless lighting.</p>
+            </div>
+            
+            <div class="feature-item hover-target">
+              <div class="feature-icon">🪵</div>
+              <h3 class="feature-title">Custom Ash Cues</h3>
+              <p class="feature-desc">A selection of premium weighted cues, chalks, and extensions tailored to your playstyle.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Arena (Interactive Glass Form) -->
+      <section id="booking" class="booking-section">
+        <div class="booking-container">
+          <div class="booking-info">
+            <h2 class="booking-title">CLAIM YOUR<br><span>AURA SLOT</span></h2>
+            <p class="booking-desc">Reserve your screen, console, or table in advance. Experience zero wait times and custom catering options.</p>
+            
+            <div class="info-list">
+              <div class="info-row">
+                <span class="info-label">Hours:</span>
+                <span class="info-val">10:00 AM - 02:00 AM Daily</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Address:</span>
+                <span class="info-val">1st Floor, Aura Towers, High Street, Uppala</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Spotlight:</span>
+                <span class="info-val">The Best Gaming Centre in Uppala</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Contact:</span>
+                <span class="info-val">+91 98765 43210</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-form-wrapper">
+            <!-- Form State: Active -->
+            <form id="reservation-form" class="booking-form">
+              <div class="input-group">
+                <input type="text" id="booking-name" required placeholder=" " class="hover-target" />
+                <label for="booking-name">Full Name</label>
+                <div class="bar"></div>
+              </div>
+
+              <div class="input-group">
+                <input type="tel" id="booking-phone" required placeholder=" " class="hover-target" />
+                <label for="booking-phone">Phone Number</label>
+                <div class="bar"></div>
+              </div>
+
+              <div class="row">
+                <div class="input-group">
+                  <input type="date" id="booking-date" required placeholder=" " class="hover-target" />
+                  <label for="booking-date">Date</label>
+                  <div class="bar"></div>
+                </div>
+
+                <div class="input-group">
+                  <input type="time" id="booking-time" required placeholder=" " class="hover-target" />
+                  <label for="booking-time">Time Slot</label>
+                  <div class="bar"></div>
+                </div>
+              </div>
+
+              <div class="input-group select-group">
+                <select id="booking-zone" required class="hover-target">
+                  <option value="" disabled selected hidden>Select Aura Zone</option>
+                  <option value="console-ps5">Console Arena (PS5)</option>
+                  <option value="snooker-12ft">Billiards - 12ft Snooker Table</option>
+                  <option value="pool-8ball">Billiards - 8-Ball Pool Table</option>
+                  <option value="combo-all">VIP All-Access Combo</option>
+                </select>
+                <div class="bar"></div>
+              </div>
+
+              <button type="submit" id="btn-submit-booking" class="btn-submit hover-target">
+                <span>Secure Booking</span>
+                <div class="glow-effect"></div>
+              </button>
+            </form>
+
+            <!-- Form State: Success (Hidden by default) -->
+            <div id="booking-success" class="booking-success hidden">
+              <div class="success-icon">✦</div>
+              <h3>Slot Confirmed!</h3>
+              <p>Your aura slot has been secured. We have sent a confirmation message with details to your phone.</p>
+              <button id="btn-reset-booking" class="btn-reset hover-target">Book Another Slot</button>
+            </div>
+            
+            <!-- Form State: Loading (Hidden by default) -->
+            <div id="booking-loading" class="booking-loading hidden">
+              <div class="loader"></div>
+              <p>Transmitting data to Aura mainframe...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer with Scroll Ticker -->
+      <footer class="footer">
+        <!-- Ticker -->
+        <div class="ticker-wrapper">
+          <div class="ticker-content">
+            <span>THE GAMING AURA</span> • <span>PLAY BEYOND LIMITS</span> • <span>PS5 ULTIMATE GEARS</span> • <span>PREMIUM SNOOKER LOUNGE</span> • <span>8-BALL SHADOWLESS POOL</span> • <span>THE GAMING AURA</span> • <span>PLAY BEYOND LIMITS</span> • <span>PS5 ULTIMATE GEARS</span> • <span>PREMIUM SNOOKER LOUNGE</span> • <span>8-BALL SHADOWLESS POOL</span>
+          </div>
+        </div>
+
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h2>THE GAMING <span>AURA</span></h2>
+            <p>The best gaming centre in Uppala. Elevating gaming culture. High-fidelity hardware meets relaxed luxury sports recreation.</p>
+          </div>
+          <div class="footer-links">
+            <div class="link-col">
+              <h4>Navigation</h4>
+              <a href="#hero">Home</a>
+              <a href="#aura-select">Aura Zones</a>
+              <a href="#digital">Console Arena</a>
+              <a href="#tactile">Billiards Lounge</a>
+            </div>
+            <div class="link-col">
+              <h4>Legals</h4>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Safety Guidelines</a>
+            </div>
+            <div class="link-col">
+              <h4>Connect</h4>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover-target">Instagram</a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="hover-target">YouTube</a>
+              <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="hover-target">Discord</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 The Gaming Aura. All Rights Reserved to Mohammed Azneed. Crafted for Champions.</p>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- main JS file -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
